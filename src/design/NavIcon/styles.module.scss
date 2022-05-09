@@ -1,0 +1,40 @@
+.container {
+  width: 45px;
+  height: 60px;
+  background: green;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.top {
+  display: flex;
+  position: relative;
+  margin-bottom: 3px;
+}
+
+.bottomInactive {
+  position: relative;
+  display: flex;
+  left: 0px;
+  transform: rotate(0deg);
+  transform-origin: top left;
+  //   transition-delay: 0;
+  transition-duration: 1s;
+  transition-property: transform, left, right;
+  transition-timing-function: ease-in-out;
+}
+
+.bottomActive {
+  position: relative;
+  display: flex;
+  left: 8px;
+  transform: rotate(90deg);
+  transform-origin: top left;
+
+  //   transition-delay: 0;
+  transition-duration: 0.8s;
+  transition-property: transform, left;
+  transition-timing-function: ease-in-out;
+}
