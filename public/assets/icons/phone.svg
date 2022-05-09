@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="26" viewBox="0 0 26 26">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_2202" data-name="Rectangle 2202" width="26" height="26" transform="translate(155 949)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_245" data-name="Mask Group 245" transform="translate(-155 -949)" clip-path="url(#clip-path)">
+    <g id="phone-duotone" transform="translate(155 949)">
+      <path id="Path_1284" data-name="Path 1284" d="M17.074,8.487,20.618.225,19.775.031a1.227,1.227,0,0,0-1.4.706L15.941,6.425a1.214,1.214,0,0,0,.351,1.422Zm-9.223,7.8a1.219,1.219,0,0,0-1.422-.351L.742,18.373a1.234,1.234,0,0,0-.711,1.4l.193.837,8.268-3.543ZM25.056,1.25,22.225.6,18.383,9.559l.985.806a18.819,18.819,0,0,1-9,9l-.806-.985L.6,22.222l.655,2.835A1.219,1.219,0,0,0,2.438,26,23.56,23.56,0,0,0,26,2.438a1.219,1.219,0,0,0-.944-1.188Z" transform="translate(0 0)" fill="#fff" opacity="0.4"/>
+      <path id="Path_1285" data-name="Path 1285" d="M20.738.346,17.195,8.608,18.5,9.68,22.346.717ZM.345,20.733l.371,1.609L9.684,18.5,8.612,17.19Z" transform="translate(-0.121 -0.121)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
