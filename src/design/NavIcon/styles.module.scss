@@ -22,7 +22,7 @@
   transform: rotate(0deg);
   transform-origin: top left;
   //   transition-delay: 0;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
   transition-property: transform, left, right;
   transition-timing-function: ease-in-out;
 }
@@ -36,7 +36,7 @@
   transform-origin: top left;
 
   //   transition-delay: 0;
-  transition-duration: 0.8s;
+  transition-duration: 0.5s;
   transition-property: transform, left;
   transition-timing-function: ease-in-out;
 }

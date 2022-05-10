@@ -1,6 +1,6 @@
 .nav {
   width: calc(3.3rem + 1.2rem);
-  position: relative;
+  position: absolute;
   padding-left: 1.2rem;
   padding-top: 10vh;
   padding-bottom: 2rem;
@@ -9,6 +9,7 @@
   flex-direction: column;
 
   @media (min-width: 768px) {
+    position: relative;
     width: calc(3.3rem + 3.5rem);
     padding-left: 3.5rem;
   }
@@ -52,7 +53,7 @@
   position: absolute;
   inset: 0;
   background-color: rgba(255, 255, 255, 0);
-  animation: fadeOut 0.8s ease-out;
+  animation: fadeOut 0.5s ease-out;
   backdrop-filter: blur(200px) opacity(0);
 
   /* Medium devices (landscape tablets, 768px and up) */
@@ -67,7 +68,7 @@
   position: absolute;
   inset: 0;
   background-color: rgba(255, 255, 255, 0.1);
-  animation: fadeIn 0.8s ease-in;
+  animation: fadeIn 0.5s ease-in;
   backdrop-filter: blur(200px) opacity(1);
 
   /* Medium devices (landscape tablets, 768px and up) */
@@ -101,7 +102,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  animation: bodyFadeIn 0.8s ease-in;
+  animation: bodyFadeIn 0.5s ease-in;
 }
 
 .bodyOut {
@@ -109,5 +110,5 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  animation: bodyFadeOut 0.8s ease-in;
+  animation: bodyFadeOut 0.5s ease-in;
 }
