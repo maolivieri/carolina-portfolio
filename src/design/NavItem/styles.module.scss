@@ -1,0 +1,24 @@
+.container {
+  min-height: 8rem;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.text {
+  transform: rotate(-180deg);
+  writing-mode: vertical-rl;
+  margin: 0;
+  font-size: 1.5rem;
+}
+.activeText {
+  transform: rotate(-180deg);
+  writing-mode: vertical-rl;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+}

@@ -14,16 +14,18 @@ const NavIcon: FC<IProps> = ({ active, setActive }) => {
         <Image
           src="/assets/icons/top.svg"
           height={8}
-          width={25}
+          width={47}
           alt="sidenavimage"
+          layout="responsive"
         />
       </div>
       <div className={active ? styles.bottomActive : styles.bottomInactive}>
         <Image
           src="/assets/icons/bottom.svg"
           height={8}
-          width={45}
+          width={62}
           alt="sidenavimage"
+          layout="responsive"
         />
       </div>
     </div>

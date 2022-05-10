@@ -1,3 +1,53 @@
 .nav {
-  background: red;
+  // background: red;
+  width: 4.5rem;
+  position: relative;
+  padding-left: 1.2rem;
+  padding-top: 5rem;
+  min-height: 100vh;
+}
+
+@keyframes fadeIn {
+  0% {
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(200px) opacity(0);
+  }
+  50% {
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(200px) opacity(0.5);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(200px) opacity(1);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(200px) opacity(1);
+  }
+  50% {
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(200px) opacity(0.5);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(200px) opacity(0);
+  }
+}
+
+.navBackgroundOut {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0);
+  animation: fadeOut 0.9s ease-out;
+  backdrop-filter: blur(200px) opacity(0);
+}
+.navBackgroundIn {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  animation: fadeIn 0.8s ease-in;
+  backdrop-filter: blur(200px) opacity(1);
 }
