@@ -1,6 +1,14 @@
 html,
 body {
-  background: #0e1027;
+  // background: #0e1027;
+  background-image: linear-gradient(
+    -45deg,
+    #24274b 0%,
+    #0e1027 30%,
+    #0e1027 70%,
+    #24274b 100%
+  );
+  background-size: 200vw;
   padding: 0;
   margin: 0;
   font-family: "Work Sans", sans-serif, Roboto;
@@ -27,6 +35,10 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.main {
+  display: flex;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -61,5 +73,25 @@ a {
 @media only screen and (min-width: 1200px) {
   html {
     font-size: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    // font-size: 87.5%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  html {
+    // font-size: 93.75%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  html {
+    // font-size: 100%;
   }
 }

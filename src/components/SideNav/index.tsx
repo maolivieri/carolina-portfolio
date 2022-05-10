@@ -14,7 +14,7 @@ const SideNav = () => {
       />
       <NavIcon active={active} setActive={setActive} />
       {active && (
-        <div>
+        <div className={styles.body}>
           <NavItem isActive={activePage === "Home"}>Home</NavItem>
           <NavItem isActive={activePage === "About"}>About</NavItem>
           <NavItem isActive={activePage === "Portfolio"}>Portfolio</NavItem>
