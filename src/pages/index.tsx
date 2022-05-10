@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import { SideNav } from "../components/SideNav";
+import { HomeScreen } from "../screens/Home";
 
 const Home: NextPage = () => {
   return (
@@ -15,7 +16,7 @@ const Home: NextPage = () => {
       </Head>
       <main className="main">
         <SideNav />
-        <h1> test</h1>
+        <HomeScreen />
       </main>
     </div>
   );
