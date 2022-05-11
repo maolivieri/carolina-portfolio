@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import { SideNav } from "../components/SideNav";
 import { HomeScreen } from "../screens/Home";
+import { PortfolioScreen } from "../screens/Portfolio";
 
 const Home: NextPage = () => {
   return (
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
       <main className="main">
         <SideNav />
         <HomeScreen />
+        <PortfolioScreen />
       </main>
     </div>
   );

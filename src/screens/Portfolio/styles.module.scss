@@ -1,3 +1,23 @@
 .container {
-  font-size: 1rem;
+  min-width: 100vw;
+  min-height: 100vh;
+  background: transparent linear-gradient(252deg, #0e1027 0%, #24274b 100%) 0%
+    0% no-repeat padding-box;
+
+  @media (min-width: 768px) {
+    background: transparent linear-gradient(58deg, #0e1027 0%, #24274b 100%) 0%
+      0% no-repeat padding-box;
+    // position: relative;
+    padding-left: calc(3.3rem + 3.5rem);
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media (min-width: 992px) {
+    padding-left: calc(3.3rem + 4.2rem);
+  }
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    padding-left: calc(3.3rem + 5.2rem);
+  }
 }
