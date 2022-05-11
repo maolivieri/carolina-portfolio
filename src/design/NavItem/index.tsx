@@ -12,7 +12,12 @@ const NavItem = ({ isActive = false, children, icon = null }: IProps) => {
   return (
     <div className={styles.container}>
       {!icon ? (
-        <p className={isActive ? styles.text : styles.activeText}>{children}</p>
+        <>
+          <p className={!isActive ? styles.text : styles.activeText}>
+            {children}
+          </p>
+          {isActive && <div className={styles.activeDot} />}
+        </>
       ) : (
         <div className={styles.icon}>
           <Image
