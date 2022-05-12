@@ -1,12 +1,22 @@
-import { FC } from "react";
+import { FC, useState } from "react";
 import styles from "./styles.module.scss";
 
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import { ProjectCard } from "../../components/ProjectCard";
+import { SliderControl } from "../../components/SliderControl";
 
 const PortfolioScreen: FC = () => {
-  const [ref] = useKeenSlider<HTMLDivElement>({
+  const [loaded, setLoaded] = useState(false);
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [ref, instanceRef] = useKeenSlider<HTMLDivElement>({
+    initial: 0,
+    slideChanged(slider) {
+      setCurrentSlide(slider.track.details.rel);
+    },
+    created() {
+      setLoaded(true);
+    },
     loop: false,
     rubberband: false,
     slides: {
@@ -141,6 +151,13 @@ const PortfolioScreen: FC = () => {
           />
         </div>
       </div>
+      {loaded && instanceRef.current && (
+        <SliderControl
+          instance={instanceRef}
+          count={7}
+          currentSlide={currentSlide}
+        />
+      )}
     </div>
   );
 };
