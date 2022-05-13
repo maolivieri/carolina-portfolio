@@ -32,62 +32,116 @@ const SliderControl = ({ count, currentSlide, instance }: IProps) => {
               ></button>
             ))}
       </div>
-      <div className={styles.controlWheel}>
+      <div
+        className={styles.controlWheel}
+        style={{
+          transform: `rotate(${-113 + 45 * (currentSlide + 1)}deg)`,
+          //   transform: "rotate(45deg) skew(45deg)";
+        }}
+      >
         <li
           className={`${styles.one} ${
             currentSlide === 0 ? styles.activeItem : ""
           }`}
         >
-          <p>ABC1</p>
+          <p
+            onClick={() => {
+              instance.current?.moveToIdx(0);
+            }}
+          >
+            ABC0
+          </p>
         </li>
         <li
           className={`${styles.two} ${
-            currentSlide === 1 ? styles.activeItem : ""
+            currentSlide === 7 ? styles.activeItem : ""
           }`}
         >
-          <p>ABC1</p>
+          <p
+            onClick={() => {
+              instance.current?.moveToIdx(7);
+            }}
+          >
+            ABC7
+          </p>
         </li>
         <li
           className={`${styles.three} ${
-            currentSlide === 2 ? styles.activeItem : ""
+            currentSlide === 6 ? styles.activeItem : ""
           }`}
         >
-          <p>ABC1</p>
+          <p
+            onClick={() => {
+              instance.current?.moveToIdx(6);
+            }}
+          >
+            ABC6
+          </p>
         </li>
         <li
           className={`${styles.four} ${
-            currentSlide === 3 ? styles.activeItem : ""
+            currentSlide === 5 ? styles.activeItem : ""
           }`}
         >
-          <p>ABC1</p>
+          <p
+            onClick={() => {
+              instance.current?.moveToIdx(5);
+            }}
+          >
+            ABC5
+          </p>
         </li>
         <li
           className={`${styles.five} ${
             currentSlide === 4 ? styles.activeItem : ""
           }`}
         >
-          <p>ABC1</p>
+          <p
+            onClick={() => {
+              instance.current?.moveToIdx(4);
+            }}
+          >
+            ABC4
+          </p>
         </li>
         <li
           className={`${styles.six} ${
-            currentSlide === 5 ? styles.activeItem : ""
+            currentSlide === 3 ? styles.activeItem : ""
           }`}
         >
-          <p>ABC1</p>
+          <p
+            onClick={() => {
+              instance.current?.moveToIdx(3);
+            }}
+          >
+            ABC3
+          </p>
         </li>
         <li
           className={`${styles.seven} ${
-            currentSlide === 6 ? styles.activeItem : ""
+            currentSlide === 2 ? styles.activeItem : ""
           }`}
         >
-          <p>ABC1</p>
+          <p
+            onClick={() => {
+              instance.current?.moveToIdx(2);
+            }}
+          >
+            ABC2
+          </p>
         </li>
         <li
           className={`${styles.eight} ${
-            currentSlide === 7 ? styles.activeItem : ""
+            currentSlide === 1 ? styles.activeItem : ""
           }`}
         >
-          <p>ABC1</p>
+          <p
+            onClick={() => {
+              instance.current?.moveToIdx(1);
+            }}
+          >
+            ABC1
+          </p>
         </li>
       </div>
     </div>
