@@ -47,11 +47,13 @@
 }
 
 .controlWheel {
+  position: relative;
   background: white;
   display: none;
   width: 50vh;
   height: 50vh;
   transform: matrix(1, 0, 0, 1, 0, 0);
+  border-radius: 50%;
 
   &:after {
     position: absolute;
@@ -60,7 +62,7 @@
     left: 2rem;
     width: calc(100% - 4rem);
     height: calc(100% - 4rem);
-    border: 1px solid red;
+    border: 0.15rem solid #9098f7;
     border-radius: 50%;
   }
 
@@ -68,12 +70,86 @@
     display: block;
   }
 
-  li {
+  ul {
     position: absolute;
-    transform: translateX(-50%, -50%);
-    list-style-type: none;
-    text-align: center;
-    vertical-align: middle;
-    // transform-origin: bottom right;
+    // width: 25vh;
+    // height: 25vh;
   }
+
+  li {
+    width: 25vh;
+    height: 25vh;
+    transform-origin: 100% 100%;
+    position: absolute;
+
+    // transform: translateX(-50%, -50%);
+    list-style-type: none;
+    // text-align: center;
+    // vertical-align: middle;
+    // transform-origin: bottom right;
+
+    &.activeItem {
+      p {
+        opacity: 1;
+      }
+    }
+
+    p {
+      display: block;
+      position: absolute;
+      width: 15vh;
+      bottom: 2.2rem;
+      right: 2.2rem;
+      text-align: center;
+      transform: skew(-45deg) rotate(-67.5deg);
+      color: #9098f7;
+      opacity: 0.6;
+      font-weight: 600;
+
+      //   width: 5vh;
+      //   height: 5vh;
+      //   border-radius: 50%;
+      //   padding-top: 10vh;
+    }
+  }
+}
+
+.one {
+  background: red;
+  transform: rotate(45deg) skew(45deg);
+}
+
+.two {
+  background: pink;
+  transform: rotate(90deg) skew(45deg);
+}
+
+.three {
+  background: orange;
+  transform: rotate(135deg) skew(45deg);
+}
+
+.four {
+  background: yellow;
+  transform: rotate(180deg) skew(45deg);
+}
+
+.five {
+  background: yellowgreen;
+  transform: rotate(225deg) skew(45deg);
+}
+
+.six {
+  background: green;
+  transform: rotate(270deg) skew(45deg);
+}
+
+.seven {
+  background: blue;
+  transform: rotate(315deg) skew(45deg);
+}
+
+.eight {
+  background: purple;
+  transform: rotate(360deg) skew(45deg);
 }

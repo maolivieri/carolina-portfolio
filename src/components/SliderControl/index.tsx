@@ -32,96 +32,64 @@ const SliderControl = ({ count, currentSlide, instance }: IProps) => {
               ></button>
             ))}
       </div>
-      <ul className={styles.controlWheel}>
+      <div className={styles.controlWheel}>
         <li
-          style={{
-            top: `${50}%`,
-            left: `${-6}%`,
-            // transform: `matrix(1, ${0.33}, ${-0.33}, 1, 0, 0)`,
-            transform: `rotate(${(360 / 8) * 6}deg) skew(${360}deg)`,
-            // transform: `rotate(270deg) skewY(90deg)`,
-          }}
+          className={`${styles.one} ${
+            currentSlide === 0 ? styles.activeItem : ""
+          }`}
         >
-          Gullie App
+          <p>ABC1</p>
         </li>
         <li
-          style={{
-            top: `${15}%`,
-            left: `${3}%`,
-            // transform: `matrix(1, ${0.33}, ${-0.33}, 1, 0, 0)`,
-            transform: `rotate(${(360 / 8) * 7}deg) skew(${360}deg)`,
-            // transform: `rotate(270deg) skewY(90deg)`,
-          }}
+          className={`${styles.two} ${
+            currentSlide === 1 ? styles.activeItem : ""
+          }`}
         >
-          Gullie Manager
+          <p>ABC1</p>
         </li>
         <li
-          style={{
-            top: `${2}%`,
-            left: `${35}%`,
-            // transform: `matrix(1, ${0.33}, ${-0.33}, 1, 0, 0)`,
-            transform: `rotate(${(360 / 8) * 8}deg) skew(${360}deg)`,
-            // transform: `rotate(270deg) skewY(90deg)`,
-          }}
+          className={`${styles.three} ${
+            currentSlide === 2 ? styles.activeItem : ""
+          }`}
         >
-          Miguel Veículos
+          <p>ABC1</p>
         </li>
         <li
-          style={{
-            top: `${21}%`,
-            left: `${75}%`,
-            // transform: `matrix(1, ${0.33}, ${-0.33}, 1, 0, 0)`,
-            transform: `rotate(${52}deg) skew(${360}deg)`,
-            // transform: `rotate(270deg) skewY(90deg)`,
-          }}
+          className={`${styles.four} ${
+            currentSlide === 3 ? styles.activeItem : ""
+          }`}
         >
-          NFT Project
+          <p>ABC1</p>
         </li>
         <li
-          style={{
-            top: `${50}%`,
-            left: `${90}%`,
-            // transform: `matrix(1, ${0.33}, ${-0.33}, 1, 0, 0)`,
-            transform: `rotate(${(360 / 8) * 2}deg) skew(${360}deg)`,
-            // transform: `rotate(270deg) skewY(90deg)`,
-          }}
+          className={`${styles.five} ${
+            currentSlide === 4 ? styles.activeItem : ""
+          }`}
         >
-          Gullies
+          <p>ABC1</p>
         </li>
         <li
-          style={{
-            top: `${79}%`,
-            left: `${79}%`,
-            // transform: `matrix(1, ${0.33}, ${-0.33}, 1, 0, 0)`,
-            transform: `rotate(${(360 / 8) * 3}deg) skew(${360}deg)`,
-            // transform: `rotate(270deg) skewY(90deg)`,
-          }}
+          className={`${styles.six} ${
+            currentSlide === 5 ? styles.activeItem : ""
+          }`}
         >
-          KDS
+          <p>ABC1</p>
         </li>
         <li
-          style={{
-            top: `${94}%`,
-            left: `${50}%`,
-            // transform: `matrix(1, ${0.33}, ${-0.33}, 1, 0, 0)`,
-            transform: `rotate(${(360 / 8) * 4}deg) skew(${360}deg)`,
-            // transform: `rotate(270deg) skewY(90deg)`,
-          }}
+          className={`${styles.seven} ${
+            currentSlide === 6 ? styles.activeItem : ""
+          }`}
         >
-          Online O
+          <p>ABC1</p>
         </li>
         <li
-          style={{
-            top: `${81}%`,
-            left: `${14}%`,
-            // transform: `matrix(1, ${0.33}, ${-0.33}, 1, 0, 0)`,
-            transform: `rotate(${(360 / 8) * 5}deg) skew(${360}deg)`,
-            // transform: `rotate(270deg) skewY(90deg)`,
-          }}
+          className={`${styles.eight} ${
+            currentSlide === 7 ? styles.activeItem : ""
+          }`}
         >
-          I P M
+          <p>ABC1</p>
         </li>
-      </ul>
+      </div>
     </div>
   );
 };
