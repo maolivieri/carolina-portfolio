@@ -8,6 +8,11 @@
   flex-direction: column;
   //   align-items: flex-start;
   justify-content: center;
+  z-index: 10000;
+
+  @media (min-width: 768px) {
+    right: 25vh;
+  }
 }
 
 .dots {
@@ -16,6 +21,10 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
 
 .dot {
@@ -35,4 +44,36 @@
   background: #9098f7;
   width: 1rem;
   height: 1rem;
+}
+
+.controlWheel {
+  background: white;
+  display: none;
+  width: 50vh;
+  height: 50vh;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+
+  &:after {
+    position: absolute;
+    content: "";
+    top: 2rem;
+    left: 2rem;
+    width: calc(100% - 4rem);
+    height: calc(100% - 4rem);
+    border: 1px solid red;
+    border-radius: 50%;
+  }
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+
+  li {
+    position: absolute;
+    transform: translateX(-50%, -50%);
+    list-style-type: none;
+    text-align: center;
+    vertical-align: middle;
+    // transform-origin: bottom right;
+  }
 }

@@ -20,7 +20,7 @@ const PortfolioScreen: FC = () => {
     loop: false,
     rubberband: false,
     slides: {
-      number: 7,
+      number: 8,
       origin: "center",
       perView: 1,
     },
@@ -123,6 +123,8 @@ const PortfolioScreen: FC = () => {
             type="UI"
             projectURL="asd"
           />
+        </div>
+        <div className={`keen-slider__slide ${styles.cardContainer}`}>
           <ProjectCard
             content={`The OrderNow online ordering solution gives users the ability to order from home for delivery, take out and drive through, as well as having the online dine-in experience.`}
             contentWidth="50%"
@@ -154,7 +156,7 @@ const PortfolioScreen: FC = () => {
       {loaded && instanceRef.current && (
         <SliderControl
           instance={instanceRef}
-          count={7}
+          count={8}
           currentSlide={currentSlide}
         />
       )}
