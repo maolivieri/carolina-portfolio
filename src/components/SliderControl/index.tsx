@@ -39,7 +39,7 @@ const SliderControl = ({ count, currentSlide, instance, projects }: IProps) => {
       <div
         className={styles.controlWheel}
         style={{
-          transform: `rotate(${-113 + 45 * (currentSlide + 1)}deg)`,
+          transform: `rotate(${-113 + (360 / count) * (currentSlide + 1)}deg)`,
         }}
       >
         {wheelArrayOrder.map((project, idx) => (
@@ -49,7 +49,7 @@ const SliderControl = ({ count, currentSlide, instance, projects }: IProps) => {
               currentSlide === project.id ? styles.activeItem : ""
             }`}
             style={{
-              transform: `rotate(${45 * (idx + 1)}deg) skew(45deg)`,
+              transform: `rotate(${(360 / count) * (idx + 1)}deg) skew(45deg)`,
             }}
           >
             <p
