@@ -33,6 +33,7 @@ a {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-x: scroll;
 
   @media only screen and (min-width: 768px) {
     flex-direction: row;
