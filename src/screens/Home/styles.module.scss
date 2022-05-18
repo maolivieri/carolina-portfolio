@@ -35,6 +35,10 @@
   align-self: flex-end;
   margin-bottom: 4rem;
 
+  p {
+    margin: 0;
+  }
+
   @media (min-width: 768px) {
     align-self: flex-start;
   }
@@ -57,16 +61,26 @@
   font-weight: 600;
   color: #9098f7;
   margin: 0;
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media (min-width: 992px) {
+    font-size: 1.35rem;
+  }
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    font-size: 1.25rem;
+  }
 }
 
 .title {
-  font-size: 4rem;
+  font-size: 3.9rem;
   font-weight: 400;
   color: #ffffff;
   margin: 0;
 
-  @media only screen and (min-width: 768px) {
-    font-size: 6rem;
+  @media (min-width: 768px) {
+    font-size: 4.3rem;
   }
 }
 
@@ -75,8 +89,9 @@
   color: #ffffff;
   max-width: 60vw;
   margin-top: 2rem;
+  line-height: 1.8rem;
 
-  @media only screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     max-width: 40vw;
   }
 }
@@ -85,6 +100,16 @@
   font-size: 1.8rem;
   font-weight: 400;
   color: #9098f7;
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media (min-width: 992px) {
+    font-size: 1.65rem;
+  }
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    font-size: 1.5rem;
+  }
 }
 
 .arrowRight {
@@ -92,7 +117,7 @@
   position: relative;
   width: 3rem;
 
-  @media only screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     display: block;
   }
 }

@@ -35,61 +35,61 @@ a {
   flex-direction: column;
   overflow-x: scroll;
 
-  @media only screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     flex-direction: row;
   }
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
   html {
     font-size: 70%;
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media (min-width: 600px) {
   html {
     font-size: 82.75%;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
   html {
     font-size: 87.5%;
   }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+@media (min-width: 992px) {
   html {
     font-size: 93.75%;
   }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   html {
     font-size: 100%;
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
   html {
     // font-size: 87.5%;
   }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+@media (min-width: 992px) {
   html {
     // font-size: 93.75%;
   }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   html {
     // font-size: 100%;
   }
