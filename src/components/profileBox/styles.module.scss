@@ -1,0 +1,28 @@
+.container {
+  background-image: url("/assets/circle.png");
+  background-size: contain;
+  width: 96vw;
+  height: 96vw;
+
+  //   background: red;
+
+  @media (min-width: 768px) {
+    position: absolute;
+    top: 10vh;
+    width: 55vw;
+    height: 55vw;
+    max-width: 80vh;
+    max-height: 80vh;
+    left: 60vw;
+  }
+
+  @media (min-width: 992px) {
+    transform: translateY(-50%);
+    top: 50%;
+    width: 50vw;
+    height: 50vw;
+    max-width: 94vh;
+    max-height: 94vh;
+    left: 60vw;
+  }
+}

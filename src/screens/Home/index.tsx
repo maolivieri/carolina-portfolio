@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { FC } from "react";
+import { ProfileBox } from "../../components/profileBox";
 import styles from "./styles.module.scss";
 
 const HomeScreen: FC = () => {
@@ -38,6 +39,7 @@ const HomeScreen: FC = () => {
           />
         </div>
       </div>
+      <ProfileBox />
     </div>
   );
 };
