@@ -31,8 +31,8 @@ const Home: NextPage = () => {
         }}
       >
         <SideNav />
-        <HomeScreen />
-        <PortfolioScreen />
+        <HomeScreen id="home" />
+        <PortfolioScreen id="portfolio" />
       </main>
     </div>
   );

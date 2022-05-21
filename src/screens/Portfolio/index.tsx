@@ -24,7 +24,11 @@ export type IProject = {
   projectURL: string;
 };
 
-const PortfolioScreen = () => {
+interface IProps {
+  id: string;
+}
+
+const PortfolioScreen = ({ id }: IProps) => {
   const projects = projectsJson as IProject[];
   const sliderCount = projects.length;
   const [loaded, setLoaded] = useState(false);
@@ -48,7 +52,7 @@ const PortfolioScreen = () => {
   });
 
   return (
-    <div className={`keen-slider ${styles.container}`}>
+    <div className={`keen-slider ${styles.container}`} id={id}>
       <div className={styles.textWrapper}>
         <h5 className={styles.header}>{`Creative territory`}</h5>
         <h1 className={styles.title}>My Lab</h1>

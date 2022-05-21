@@ -2,10 +2,13 @@ import Image from "next/image";
 import { FC } from "react";
 import { ProfileBox } from "../../components/profileBox";
 import styles from "./styles.module.scss";
+interface IProps {
+  id: string;
+}
 
-const HomeScreen: FC = () => {
+const HomeScreen = ({ id }: IProps) => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id={id}>
       <div className={styles.highlight}>
         <div className={styles.highlightIcon}>
           <Image
