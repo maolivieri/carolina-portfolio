@@ -158,3 +158,105 @@
     min-width: calc(21vw * 1.5);
   }
 }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 0 3rem 3rem 3rem;
+
+  @media (min-width: 768px) {
+    padding: 0 6rem 3rem 6rem;
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media (min-width: 992px) {
+    padding: 0 8rem 3rem 8rem;
+  }
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    padding: 0 10rem 3rem 10rem;
+  }
+}
+
+.footerHightlight {
+  align-self: flex-end;
+
+  p {
+    color: #9098f7;
+    font-family: "Indie Flower", cursive;
+    margin: 0;
+  }
+
+  .footerHightlightText {
+    width: 10rem;
+    transform: rotate(-18deg);
+    margin-top: 2rem;
+  }
+
+  .footerHightlightFace {
+    font-size: 4rem;
+    text-align: right;
+    margin-top: -3rem;
+  }
+}
+
+.footerContent {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  h3 {
+    color: #ffffff;
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  p {
+    color: #ffffff;
+  }
+
+  .contactSectionWrapper {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+
+    .contactBox {
+      display: flex;
+      align-items: center;
+      flex: 1;
+
+      div {
+        width: 1.3rem;
+        height: 1.3rem;
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+
+.contactMargin {
+  margin-left: 0rem;
+
+  @media (min-width: 768px) {
+    margin-left: 3rem;
+  }
+
+  @media (min-width: 992px) {
+    margin-left: 8rem;
+  }
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    margin-left: 10rem;
+  }
+}

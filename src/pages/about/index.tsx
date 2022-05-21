@@ -1,5 +1,6 @@
 import styles from "./styles.module.scss";
 import { SideNav } from "../../components/SideNav";
+import Image from "next/image";
 
 const AboutPage = () => {
   return (
@@ -29,10 +30,11 @@ const AboutPage = () => {
         <div className={styles.extaContent}>
           <div className={styles.extaContentLeftColumn}>
             <p>
+              {`
               with my dog, cooking, paiting, photographing or, as a good
               brazilian, in a barbecue with family and friends. I love traveling
               and being outside getting to know new places and people, but I’m
-              also a huge fan of Netflix & chill days.
+              also a huge fan of Netflix & chill days.`}
             </p>
           </div>
           <div className={styles.extaContentRightColumn}>
@@ -41,7 +43,45 @@ const AboutPage = () => {
         </div>
         <div className={styles.skills}></div>
       </main>
-      <footer></footer>
+      <div className={styles.footer}>
+        <div className={styles.footerHightlight}>
+          <p className={styles.footerHightlightText}>
+            {`Feel free to reach out. I'm looking forward to hearing from you`}
+          </p>
+          <p className={styles.footerHightlightFace}>:)</p>
+        </div>
+        <div className={styles.footerContent}>
+          <h3>
+            Carolina <br /> Rodrigues
+          </h3>
+          <div className={styles.contactSectionWrapper}>
+            <div className={`${styles.contactBox}`}>
+              <div>
+                <Image
+                  src="/assets/icons/mail.svg"
+                  width={26}
+                  height={26}
+                  layout="responsive"
+                  alt="email icon"
+                />
+              </div>
+              <p>carol.rj00@hotmail.com</p>
+            </div>
+            <div className={`${styles.contactBox} ${styles.contactMargin}`}>
+              <div>
+                <Image
+                  src="/assets/icons/phone.svg"
+                  width={26}
+                  height={26}
+                  layout="responsive"
+                  alt="phone icon"
+                />
+              </div>
+              <p>+61 497 803 687</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
