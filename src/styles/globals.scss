@@ -74,23 +74,3 @@ a {
     font-size: 100%;
   }
 }
-
-@media (min-width: 768px) {
-  html {
-    // font-size: 87.5%;
-  }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media (min-width: 992px) {
-  html {
-    // font-size: 93.75%;
-  }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  html {
-    // font-size: 100%;
-  }
-}
