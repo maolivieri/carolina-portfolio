@@ -1,0 +1,30 @@
+[
+  {
+    "skill_title": "General",
+    "skills_list": [
+      "UI & UX",
+      "Product Design",
+      "User Research",
+      "Wireframing",
+      "Prototype",
+      "Illustration",
+      "Agile project management",
+      "Team work",
+      "Problem-solving"
+    ]
+  },
+  {
+    "skill_title": "Design & Engineering",
+    "skills_list": [
+      "Figma",
+      "Adobe XD",
+      "Photoshop",
+      "Illustrator",
+      "HTML / CSS"
+    ]
+  },
+  {
+    "skill_title": "Project Management",
+    "skills_list": ["Jira", "MS Office", "Miro"]
+  }
+]

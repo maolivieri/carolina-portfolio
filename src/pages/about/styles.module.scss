@@ -61,12 +61,26 @@
 }
 
 .dowloadButton {
-  background: #9098f7;
+  position: relative;
   padding: 0.8rem 2.2rem;
   border-radius: 0.7rem;
   text-decoration: none;
   border: none;
   margin-bottom: 2rem;
+  cursor: pointer;
+  overflow: hidden;
+  color: #0e1027;
+  background: rgba(144, 152, 247, 1);
+
+  &:hover {
+    background: rgba(144, 152, 247, 0.8);
+    color: #ffffff;
+  }
+
+  &:active {
+    background: rgba(144, 152, 247, 0.9);
+    color: #ffffff;
+  }
 
   @media (min-width: 768px) {
     margin-bottom: 0;
@@ -283,5 +297,66 @@
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media (min-width: 1200px) {
     margin-left: 10rem;
+  }
+}
+
+.skillsSectionWrapper {
+  padding: 2rem 0;
+
+  .skillsSectionTitle {
+    font-size: 2rem;
+    color: #ffffff;
+  }
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 2rem;
+
+  div:first-child {
+    grid-row: 1/3;
+  }
+
+  h6 {
+    color: #9098f7;
+    font-size: 1.8rem;
+    margin: 0;
+    width: 100%;
+  }
+
+  div {
+    width: calc(90vw / 2);
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+      width: calc(78vw / 2);
+    }
+
+    @media (min-width: 992px) {
+      width: calc(60vw / 2);
+    }
+
+    @media (min-width: 1200px) {
+      width: calc(42vw / 2);
+    }
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      list-style-type: none;
+      padding: 0.4rem 1rem;
+      border-radius: 0.6rem;
+      background: #15172e;
+      color: #ffffff;
+    }
   }
 }

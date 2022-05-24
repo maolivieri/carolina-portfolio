@@ -1,6 +1,7 @@
 import styles from "./styles.module.scss";
 import { SideNav } from "../../components/SideNav";
 import Image from "next/image";
+import skillsJson from "./skills.json";
 
 const AboutPage = () => {
   return (
@@ -26,7 +27,7 @@ const AboutPage = () => {
           ended up taking me a few places around the globe and working with
           different types of projects and clientes from diverse industries.
         </p>
-        <button className={styles.dowloadButton}>Download Resume</button>
+        {/* <button className={styles.dowloadButton}>Download Resume</button> */}
         <div className={styles.extaContent}>
           <div className={styles.extaContentLeftColumn}>
             <p>
@@ -41,7 +42,21 @@ const AboutPage = () => {
             <div className={styles.profileDetailCircle} />
           </div>
         </div>
-        <div className={styles.skills}></div>
+        <div className={styles.skillsSectionWrapper}>
+          <h3 className={styles.skillsSectionTitle}>Skills</h3>
+          <div className={styles.skills}>
+            {skillsJson.map((skill) => (
+              <div key={skill.skill_title}>
+                <h6>{skill.skill_title}</h6>
+                <ul>
+                  {skill.skills_list.map((sk) => (
+                    <li key={sk}>{sk}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
       </main>
       <div className={styles.footer}>
         <div className={styles.footerHightlight}>
